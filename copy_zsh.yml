@@ -1,0 +1,24 @@
+- hosts: server
+  tasks:
+#    - name: copy script
+#      copy: src=zsh.sh dest=/home/pi/
+
+  
+#    - name: copy script root
+#      copy: src=zsh.sh dest=/root
+
+  
+    - name: copy zsh themes
+      copy: src=proxmox.zsh-theme dest=/home/pi/.oh-my-zsh/themes/
+
+  
+    - name: copy zsh themes root
+      copy: src=proxmox.zsh-theme dest=/root/.oh-my-zsh/themes/
+
+  
+#    - name: copy .zshrc
+#      copy: src=.zshrc dest=/home/pi
+
+  
+#    - name: copy .zshrc root
+#      copy: src=.zshrc dest=/root/

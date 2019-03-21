@@ -1,0 +1,10 @@
+- hosts: server
+  tasks:
+
+  
+    - name: copy .zshrc
+      copy: src=files/.zshrc dest=/home/pi
+
+  
+    - name: copy .zshrc root
+      copy: src=files/root/.zshrc dest=/root/

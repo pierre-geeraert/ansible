@@ -1,0 +1,5 @@
+
+- hosts: linux
+  tasks:
+    - name: copy check_service
+      copy: src=files/check_service.sh dest=/home/pi

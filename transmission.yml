@@ -1,0 +1,12 @@
+- hosts: transmission
+  tasks:
+
+  - name: install
+    apt:
+       name: transmission-daemon
+       state: present
+
+  - name: service stop
+    service:
+           name: transmission-daemon
+           state: stopped

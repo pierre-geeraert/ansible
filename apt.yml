@@ -1,0 +1,10 @@
+- hosts: server
+  tasks:
+  - name: Update
+    apt:
+        update_cache: yes
+ 
+ 
+  - name: Update all packages to the latest version
+    apt:
+        upgrade: dist

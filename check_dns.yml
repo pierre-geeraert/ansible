@@ -1,0 +1,5 @@
+- hosts: server
+  tasks:
+  - name: Update
+    net_ping:
+       dest: 8.8.8.8

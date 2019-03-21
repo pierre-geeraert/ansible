@@ -1,0 +1,6 @@
+- hosts: server
+  tasks:
+  - name: Update
+    apt:
+       name: qemu-guest-agent
+       update_cache: yes
