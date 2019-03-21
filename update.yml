@@ -1,4 +1,3 @@
-#update all
 - hosts : linux
   tasks:
   - name: Update and upgrade apt packages
